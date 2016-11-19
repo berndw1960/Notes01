@@ -35,7 +35,7 @@
   </target>
 
   <target name="compile" description="compilation">
-    <javac srcdir="${src}" destdir="${bin}" debug="yes" includeantruntime="false">
+    <javac srcdir="${src}" destdir="${bin}" fork="true" debug="yes" includeantruntime="false">
       <include name="**/*.java"/>
       <classpath refid="classpath"/>
     </javac>
